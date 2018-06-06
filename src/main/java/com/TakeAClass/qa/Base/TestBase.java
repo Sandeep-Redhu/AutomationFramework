@@ -23,7 +23,7 @@ public class TestBase {
 
 	public TestBase() throws IOException {
 		prop = new Properties();
-		// test
+		// Need to be deleted
 		FileInputStream ip = new FileInputStream(
 				"D:\\Home\\November\\SandeepTest\\src\\main\\java\\com\\TakeAClass\\qa\\config\\Config.properties");
 		prop.load(ip);
