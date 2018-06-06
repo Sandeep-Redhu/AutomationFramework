@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RedhuAutomationFrameWork" duration-ms="61534" started-at="2018-06-06T08:40:49Z" finished-at="2018-06-06T08:41:51Z">
+    <groups>
+    </groups>
+    <test name="TakeAClassTest" duration-ms="61534" started-at="2018-06-06T08:40:49Z" finished-at="2018-06-06T08:41:51Z">
+      <class name="com.TakeAClass.TestCases.EditProfilePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="setUp" is-config="true" duration-ms="31099" started-at="2018-06-06T08:40:50Z" finished-at="2018-06-06T08:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFirstNameUpdate()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="verifyFirstNameUpdate" duration-ms="29739" started-at="2018-06-06T08:41:21Z" finished-at="2018-06-06T08:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstNameUpdate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="638" started-at="2018-06-06T08:41:50Z" finished-at="2018-06-06T08:41:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TakeAClass.TestCases.EditProfilePageTest -->
+    </test> <!-- TakeAClassTest -->
+  </suite> <!-- RedhuAutomationFrameWork -->
+</testng-results>

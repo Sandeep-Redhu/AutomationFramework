@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RedhuAutomationFrameWork]">
+  <listeners>
+    <listener class-name="com.TakeAClass.ExtentReporting.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="TakeAClassTest(failed)">
+    <classes>
+      <class name="com.TakeAClass.TestCases.SettingPageTest">
+        <methods>
+          <include name="userLogoutTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.TakeAClass.TestCases.SettingPageTest -->
+    </classes>
+  </test> <!-- TakeAClassTest(failed) -->
+</suite> <!-- Failed suite [RedhuAutomationFrameWork] -->
