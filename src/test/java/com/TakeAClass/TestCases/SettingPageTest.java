@@ -25,22 +25,19 @@ public class SettingPageTest extends TestBase {
 		stPage = new SettingPage();
 	}
 
-	@Test(enabled=true)
+	@Test(enabled = true)
 	public void userLogoutTest() throws IOException, InterruptedException {
 		lgn.userLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		stPage.userLogout();
 
 	}
-	
-	@Test(enabled=true)
-	public void changeUserPasswordTest() throws InterruptedException{
+
+	@Test(enabled = true)
+	public void changeUserPasswordTest() throws InterruptedException {
 		lgn.userLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		stPage.changeUserPassword();
-		
-		
-		
+
 	}
-	
 
 	@AfterMethod
 	public void tearDown() {

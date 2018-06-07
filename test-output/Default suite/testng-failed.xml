@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TakeAClass.TestCases.EditProfilePageTest">
+      <class name="com.TakeAClass.TestCases.LoginPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="userLoginTest"/>
           <include name="setUp"/>
-          <include name="verifyFirstNameUpdate"/>
         </methods>
-      </class> <!-- com.TakeAClass.TestCases.EditProfilePageTest -->
+      </class> <!-- com.TakeAClass.TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

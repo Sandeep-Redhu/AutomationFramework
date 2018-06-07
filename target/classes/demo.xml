@@ -13,7 +13,7 @@
 		<classes>
 			
 
-			<class name="com.TakeAClass.TestCases.EditProfilePageTest"></class>
+			<class name="com.TakeAClass.TestCases.SettingPageTest"></class>
 			
 
 		</classes>

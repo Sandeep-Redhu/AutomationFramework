@@ -40,16 +40,16 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public void userLogin(String us, String psd) {
+	public void userLogin(String us, String psd) throws InterruptedException {
 
 		userLoginButton.click();
 		emailField.sendKeys(us);
 		passwordField.sendKeys(psd);
 		loginButton.click();
-		//writing to validate is user has login or not
-		String crntUrl = driver.getCurrentUrl();
-		Assert.assertEquals(crntUrl, "http://staging.takeaclass.com/users/classes", "User is not login properly");
+		Thread.sleep(2000);
+    	String status = userDropDownAerrow.getAttribute("class");
+		Assert.assertEquals(status, "icon-user-dropdown", "User is not able to Login successfully");
 
 	}
-
+ 
 }

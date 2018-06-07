@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="RedhuAutomationFrameWork" duration-ms="61534" started-at="2018-06-06T08:40:49Z" finished-at="2018-06-06T08:41:51Z">
+  <suite name="RedhuAutomationFrameWork" duration-ms="50375" started-at="2018-06-07T08:07:51Z" finished-at="2018-06-07T08:08:41Z">
     <groups>
     </groups>
-    <test name="TakeAClassTest" duration-ms="61534" started-at="2018-06-06T08:40:49Z" finished-at="2018-06-06T08:41:51Z">
-      <class name="com.TakeAClass.TestCases.EditProfilePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="setUp" is-config="true" duration-ms="31099" started-at="2018-06-06T08:40:50Z" finished-at="2018-06-06T08:41:21Z">
+    <test name="TakeAClassTest" duration-ms="50375" started-at="2018-06-07T08:07:51Z" finished-at="2018-06-07T08:08:41Z">
+      <class name="com.TakeAClass.TestCases.SettingPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="setUp" is-config="true" duration-ms="8224" started-at="2018-06-07T08:07:51Z" finished-at="2018-06-07T08:07:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyFirstNameUpdate()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="verifyFirstNameUpdate" duration-ms="29739" started-at="2018-06-06T08:41:21Z" finished-at="2018-06-06T08:41:50Z">
+        <test-method status="PASS" signature="changeUserPasswordTest()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="changeUserPasswordTest" duration-ms="10933" started-at="2018-06-07T08:07:59Z" finished-at="2018-06-07T08:08:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFirstNameUpdate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TakeAClass.TestCases.EditProfilePageTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="638" started-at="2018-06-06T08:41:50Z" finished-at="2018-06-06T08:41:51Z">
+        </test-method> <!-- changeUserPasswordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="635" started-at="2018-06-07T08:08:10Z" finished-at="2018-06-07T08:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.TakeAClass.TestCases.EditProfilePageTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="setUp" is-config="true" duration-ms="9943" started-at="2018-06-07T08:08:11Z" finished-at="2018-06-07T08:08:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userLogoutTest()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="userLogoutTest" duration-ms="19946" started-at="2018-06-07T08:08:21Z" finished-at="2018-06-07T08:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogoutTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TakeAClass.TestCases.SettingPageTest@6a41eaa2]" name="tearDown" is-config="true" duration-ms="644" started-at="2018-06-07T08:08:41Z" finished-at="2018-06-07T08:08:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TakeAClass.TestCases.SettingPageTest -->
     </test> <!-- TakeAClassTest -->
   </suite> <!-- RedhuAutomationFrameWork -->
 </testng-results>
