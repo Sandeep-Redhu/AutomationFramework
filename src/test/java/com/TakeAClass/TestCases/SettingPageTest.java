@@ -6,9 +6,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.TakeAClass.qa.Base.TestBase;
 import com.TakeAClass.qa.pages.LoginPage;
 import com.TakeAClass.qa.pages.SettingPage;
+import com.redhu.Base.TestBase;
 
 public class SettingPageTest extends TestBase {
 	LoginPage lgn;
@@ -25,22 +25,18 @@ public class SettingPageTest extends TestBase {
 		stPage = new SettingPage();
 	}
 
-	@Test(enabled=true)
+	@Test(enabled = true)
 	public void userLogoutTest() throws IOException, InterruptedException {
 		lgn.userLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		stPage.userLogout();
-
 	}
-	
-	@Test(enabled=true)
-	public void changeUserPasswordTest() throws InterruptedException{
+
+	@Test(enabled = true)
+	public void changeUserPasswordTest() throws InterruptedException {
 		lgn.userLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		stPage.changeUserPassword();
-		
-		
-		
+
 	}
-	
 
 	@AfterMethod
 	public void tearDown() {

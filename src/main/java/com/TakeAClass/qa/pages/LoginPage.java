@@ -7,26 +7,31 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class LoginPage extends TestBase {
 
 	// creation of object Repository
-
-	@FindBy(xpath = "//a[@class='nav-link']")
+	
+	
+	
+	@FindBy(xpath="//a[@href='/users/login']")
 	WebElement userLoginButton;
+	
+	@FindBy(xpath="//a[text()='Sign Up']")
+	WebElement singhUpText;
+
+
 
 	@FindBy(name = "user[email]")
 	WebElement emailField;
-	
-	//
 
-	@FindBy(name = "user[password]")
+	@FindBy(name = "user[password]")   
 	WebElement passwordField;
 
 	@FindBy(xpath = "//input[@name='commit']")
 	WebElement loginButton;
-	
+
 	@FindBy(xpath = "//span[@class='icon-user-dropdown']")
 	WebElement userDropDownAerrow;
 
@@ -40,16 +45,23 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 
-	public void userLogin(String us, String psd) {
+	public void userLogin(String us, String psd) throws InterruptedException {
 
 		userLoginButton.click();
 		emailField.sendKeys(us);
 		passwordField.sendKeys(psd);
 		loginButton.click();
-		//writing to validate is user has login or not
-		String crntUrl = driver.getCurrentUrl();
-		Assert.assertEquals(crntUrl, "http://staging.takeaclass.com/users/classes", "User is not login properly");
+		Thread.sleep(2000);
+		String status = userDropDownAerrow.getAttribute("class");
+		Assert.assertEquals(status, "icon-user-dropdown", "User is not able to Login successfully");
 
 	}
+	
+	
+	public void signUpText(){
+		
+	}
+	
+	
 
 }

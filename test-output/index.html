@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-RedhuAutomationFrameWork">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RedhuAutomationFrameWork" title="com.TakeAClass.TestCases.EditProfilePageTest" hash-for-method="verifyFirstNameUpdate">verifyFirstNameUpdate</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-RedhuAutomationFrameWork" title="com.TakeAClass.TestCases.LoginPageTest" hash-for-method="userLoginTest">userLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RedhuAutomationFrameWork -->
@@ -120,14 +120,14 @@
           <div class="suite-RedhuAutomationFrameWork-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.TakeAClass.TestCases.EditProfilePageTest</span>
+              <span class="class-name">com.TakeAClass.TestCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFirstNameUpdate">
-                  </a> <!-- verifyFirstNameUpdate -->
-                  <span class="method-name">verifyFirstNameUpdate</span>
+                  <a name="userLoginTest">
+                  </a> <!-- userLoginTest -->
+                  <span class="method-name">userLoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -143,11 +143,12 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RedhuAutomationFrameWork&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.TakeAClass.ExtentReporting.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;com.redhu.FailTestCase.FailTestCaseHandling&quot;/&gt;
+    &lt;listener class-name=&quot;com.redhu.ExtentReporting.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TakeAClassTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.TakeAClass.TestCases.EditProfilePageTest&quot;/&gt;
+      &lt;class name=&quot;com.TakeAClass.TestCases.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TakeAClassTest --&gt;
 &lt;/suite&gt; &lt;!-- RedhuAutomationFrameWork --&gt;
@@ -189,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFirstNameUpdate')
-data.setCell(0, 2, 'com.TakeAClass.TestCases.EditProfilePageTest')
-data.setCell(0, 3, 29739);
+data.setCell(0, 1, 'userLoginTest')
+data.setCell(0, 2, 'com.TakeAClass.TestCases.LoginPageTest')
+data.setCell(0, 3, 7906);
 window.suiteTableData['RedhuAutomationFrameWork']= { tableData: data, tableDiv: 'times-div-RedhuAutomationFrameWork'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-RedhuAutomationFrameWork">
               </div> <!-- times-div-RedhuAutomationFrameWork -->
             </div> <!-- times-div -->
@@ -211,9 +212,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RedhuAutomationFrameWork" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.TakeAClass.TestCases.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loginPageTiteTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-RedhuAutomationFrameWork" class="panel">
@@ -222,18 +230,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.TakeAClass.TestCases.EditProfilePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TakeAClass.TestCases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyFirstNameUpdate</span>
-                <span class="method-start">31099 ms</span>
+                <span class="method-name">userLoginTest</span>
+                <span class="method-start">16631 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60841 ms</span>
+                <span class="method-start">24540 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

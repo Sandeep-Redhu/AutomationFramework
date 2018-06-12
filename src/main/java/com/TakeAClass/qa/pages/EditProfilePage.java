@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class EditProfilePage extends TestBase {
 
@@ -47,9 +47,7 @@ public class EditProfilePage extends TestBase {
 		Thread.sleep(3000);
 		editProfileButton.click();
 		Thread.sleep(3000);
-
 		String name = userFirstNameTextField.getAttribute("value");
-
 		Assert.assertEquals(name, "sandeep", "name is  not updated successfully");
 	}
 

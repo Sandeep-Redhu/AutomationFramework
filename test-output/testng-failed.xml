@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [RedhuAutomationFrameWork]">
   <listeners>
-    <listener class-name="com.TakeAClass.ExtentReporting.ExtentReporterNG"/>
+    <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling"/>
+    <listener class-name="com.redhu.ExtentReporting.ExtentReporterNG"/>
   </listeners>
   <test thread-count="5" name="TakeAClassTest(failed)">
     <classes>
@@ -13,6 +14,21 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.TakeAClass.TestCases.SettingPageTest -->
+      <class name="com.TakeAClass.TestCases.SearchClassFilters">
+        <methods>
+          <include name="setUp"/>
+          <include name="verificationOfSearchClassFilter_artAndCraft"/>
+          <include name="verificationOfSearchClassFilter_All"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.TakeAClass.TestCases.SearchClassFilters -->
+      <class name="com.TakeAClass.TestCases.EditProfilePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyFirstNameUpdate"/>
+        </methods>
+      </class> <!-- com.TakeAClass.TestCases.EditProfilePageTest -->
     </classes>
   </test> <!-- TakeAClassTest(failed) -->
 </suite> <!-- Failed suite [RedhuAutomationFrameWork] -->

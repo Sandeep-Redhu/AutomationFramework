@@ -3,8 +3,8 @@
 <suite name="RedhuAutomationFrameWork">
 
  <listeners>
- 
-   <listener class-name="com.TakeAClass.ExtentReporting.ExtentReporterNG" />
+   <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling" />
+   <listener class-name="com.redhu.ExtentReporting.ExtentReporterNG" />
 	
 	</listeners>
 

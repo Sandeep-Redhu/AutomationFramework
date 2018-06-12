@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class SettingPage extends TestBase {
 
@@ -34,6 +34,9 @@ public class SettingPage extends TestBase {
 	@FindBy(xpath="//input[@value='Change']")
 	WebElement changePasswordSubmitButton;
 	
+	@FindBy(xpath = "//input[@name='commit']")
+	WebElement loginButton;
+	
 	
 	// initiallization of object repositry
 	public SettingPage() throws IOException {
@@ -44,8 +47,9 @@ public class SettingPage extends TestBase {
 		userDropDownAerrow.click();
 		Thread.sleep(2000);
 		logoutButton.click();
-		String crtUrl = driver.getCurrentUrl();
-		Assert.assertEquals(crtUrl, "http://staging.takeaclass.com/users/login", "User is not logout successfully");
+		Thread.sleep(2000);
+		String lgnTxt = loginButton.getAttribute("value");
+		Assert.assertEquals(lgnTxt, "Login", "User is not logout successfully");
 		
 	}
 	
