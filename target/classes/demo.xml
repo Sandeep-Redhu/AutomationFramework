@@ -4,6 +4,8 @@
 
  <listeners>
  
+  <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling" />
+ 
    <listener class-name="com.TakeAClass.ExtentReporting.ExtentReporterNG" />
 	
 	</listeners>
@@ -13,7 +15,7 @@
 		<classes>
 			
 
-			<class name="com.TakeAClass.TestCases.SettingPageTest"></class>
+			<class name="com.TakeAClass.TestCases.LoginPageTest"></class>
 			
 
 		</classes>

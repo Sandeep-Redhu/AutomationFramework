@@ -12,21 +12,26 @@ import com.TakeAClass.qa.Base.TestBase;
 public class LoginPage extends TestBase {
 
 	// creation of object Repository
-
-	@FindBy(xpath = "//a[@class='nav-link']")
+	
+	
+	
+	@FindBy(xpath="//a[@href='/users/login1']")
 	WebElement userLoginButton;
+	
+	@FindBy(xpath="//a[text()='Sign Up']")
+	WebElement singhUpText;
+
+
 
 	@FindBy(name = "user[email]")
 	WebElement emailField;
-	
-	//
 
-	@FindBy(name = "user[password]")
+	@FindBy(name = "user[password]")   
 	WebElement passwordField;
 
 	@FindBy(xpath = "//input[@name='commit']")
 	WebElement loginButton;
-	
+
 	@FindBy(xpath = "//span[@class='icon-user-dropdown']")
 	WebElement userDropDownAerrow;
 
@@ -47,9 +52,16 @@ public class LoginPage extends TestBase {
 		passwordField.sendKeys(psd);
 		loginButton.click();
 		Thread.sleep(2000);
-    	String status = userDropDownAerrow.getAttribute("class");
+		String status = userDropDownAerrow.getAttribute("class");
 		Assert.assertEquals(status, "icon-user-dropdown", "User is not able to Login successfully");
 
 	}
- 
+	
+	
+	public void signUpText(){
+		
+	}
+	
+	
+
 }

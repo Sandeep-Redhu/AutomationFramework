@@ -29,7 +29,6 @@ public class SettingPageTest extends TestBase {
 	public void userLogoutTest() throws IOException, InterruptedException {
 		lgn.userLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		stPage.userLogout();
-
 	}
 
 	@Test(enabled = true)

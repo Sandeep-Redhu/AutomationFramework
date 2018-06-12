@@ -47,9 +47,7 @@ public class EditProfilePage extends TestBase {
 		Thread.sleep(3000);
 		editProfileButton.click();
 		Thread.sleep(3000);
-
 		String name = userFirstNameTextField.getAttribute("value");
-
 		Assert.assertEquals(name, "sandeep", "name is  not updated successfully");
 	}
 
