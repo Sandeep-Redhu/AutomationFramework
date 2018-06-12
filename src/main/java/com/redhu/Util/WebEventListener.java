@@ -1,4 +1,4 @@
-package com.TakeAClass.qa.Util;
+package com.redhu.Util;
 
 import java.io.IOException;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class WebEventListener extends TestBase implements WebDriverEventListener {
 

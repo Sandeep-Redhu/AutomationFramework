@@ -1,4 +1,4 @@
-package com.TakeAClass.qa.Util;
+package com.redhu.Util;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class TestUtil extends TestBase {
 

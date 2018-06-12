@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.TakeAClass.qa.Base.TestBase;
+import com.redhu.Base.TestBase;
 
 public class LoginPage extends TestBase {
 
@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
 	
 	
 	
-	@FindBy(xpath="//a[@href='/users/login1']")
+	@FindBy(xpath="//a[@href='/users/login']")
 	WebElement userLoginButton;
 	
 	@FindBy(xpath="//a[text()='Sign Up']")

@@ -1,4 +1,4 @@
-package com.TakeAClass.qa.Base;
+package com.redhu.Base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.TakeAClass.qa.Util.TestUtil;
-import com.TakeAClass.qa.Util.WebEventListener;
+import com.redhu.Util.TestUtil;
+import com.redhu.Util.WebEventListener;
 
 public class TestBase {
 

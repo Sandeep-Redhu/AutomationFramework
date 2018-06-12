@@ -1,4 +1,4 @@
-package com.TakeAClass.ExtentReporting;
+package com.redhu.ExtentReporting;
 
 import java.io.File;
 import java.util.Calendar;
