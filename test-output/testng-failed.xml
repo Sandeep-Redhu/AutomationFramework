@@ -5,30 +5,15 @@
     <listener class-name="com.redhu.FailTestCase.FailTestCaseHandling"/>
     <listener class-name="com.redhu.ExtentReporting.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="TakeAClassTest(failed)">
+  <test thread-count="5" name="HR-ONBOARDING(failed)">
     <classes>
-      <class name="com.TakeAClass.TestCases.SettingPageTest">
-        <methods>
-          <include name="userLogoutTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.TakeAClass.TestCases.SettingPageTest -->
-      <class name="com.TakeAClass.TestCases.SearchClassFilters">
+      <class name="com.HrOnBoarding.QA.TestCases.AdminLoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="verificationOfSearchClassFilter_artAndCraft"/>
-          <include name="verificationOfSearchClassFilter_All"/>
+          <include name="verifyAdminLogin"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.TakeAClass.TestCases.SearchClassFilters -->
-      <class name="com.TakeAClass.TestCases.EditProfilePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyFirstNameUpdate"/>
-        </methods>
-      </class> <!-- com.TakeAClass.TestCases.EditProfilePageTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.AdminLoginTest -->
     </classes>
-  </test> <!-- TakeAClassTest(failed) -->
+  </test> <!-- HR-ONBOARDING(failed) -->
 </suite> <!-- Failed suite [RedhuAutomationFrameWork] -->

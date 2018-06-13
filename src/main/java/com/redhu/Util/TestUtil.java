@@ -18,6 +18,8 @@ public class TestUtil extends TestBase {
 
 	public static long PAGE_LOAD_TIMEOUT = 30;
 	public static long IMPLICTWAITTIMEOUT = 20;
+	
+	
 
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

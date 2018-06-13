@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RedhuAutomationFrameWork" duration-ms="25192" started-at="2018-06-12T11:54:36Z" finished-at="2018-06-12T11:55:01Z">
+  <suite name="RedhuAutomationFrameWork" duration-ms="19022" started-at="2018-06-13T13:45:57Z" finished-at="2018-06-13T13:46:16Z">
     <groups>
     </groups>
-    <test name="TakeAClassTest" duration-ms="25192" started-at="2018-06-12T11:54:36Z" finished-at="2018-06-12T11:55:01Z">
-      <class name="com.TakeAClass.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TakeAClass.TestCases.LoginPageTest@5c3bd550]" name="setUp" is-config="true" duration-ms="16631" started-at="2018-06-12T11:54:36Z" finished-at="2018-06-12T11:54:52Z">
+    <test name="HR-ONBOARDING" duration-ms="19022" started-at="2018-06-13T13:45:57Z" finished-at="2018-06-13T13:46:16Z">
+      <class name="com.HrOnBoarding.QA.TestCases.AdminLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AdminLoginTest@5c3bd550]" name="setUp" is-config="true" duration-ms="16798" started-at="2018-06-13T13:45:57Z" finished-at="2018-06-13T13:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="userLoginTest()[pri:0, instance:com.TakeAClass.TestCases.LoginPageTest@5c3bd550]" name="userLoginTest" duration-ms="7906" started-at="2018-06-12T11:54:52Z" finished-at="2018-06-12T11:55:00Z">
+        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AdminLoginTest@5c3bd550]" name="verifyAdminLogin" duration-ms="1585" started-at="2018-06-13T13:46:14Z" finished-at="2018-06-13T13:46:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TakeAClass.TestCases.LoginPageTest@5c3bd550]" name="tearDown" is-config="true" duration-ms="618" started-at="2018-06-12T11:55:00Z" finished-at="2018-06-12T11:55:01Z">
+        </test-method> <!-- verifyAdminLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AdminLoginTest@5c3bd550]" name="tearDown" is-config="true" duration-ms="602" started-at="2018-06-13T13:46:15Z" finished-at="2018-06-13T13:46:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.TakeAClass.TestCases.LoginPageTest -->
-    </test> <!-- TakeAClassTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.AdminLoginTest -->
+    </test> <!-- HR-ONBOARDING -->
   </suite> <!-- RedhuAutomationFrameWork -->
 </testng-results>

@@ -13,7 +13,6 @@ import com.redhu.Base.TestBase;
 public class EditProfilePageTest extends TestBase {
 
 	LoginPage lgn;
-	String name ; // to be deleted
 	EditProfilePage ed;
 
 	public EditProfilePageTest() throws IOException {
