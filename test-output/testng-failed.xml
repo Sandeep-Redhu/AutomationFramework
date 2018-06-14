@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="HR-ONBOARDING(failed)">
     <classes>
-      <class name="com.HrOnBoarding.QA.TestCases.AdminLoginTest">
+      <class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest">
         <methods>
+          <include name="verifyForgotPasswordEmailSent"/>
+          <include name="terDown"/>
           <include name="setUp"/>
-          <include name="verifyAdminLogin"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.HrOnBoarding.QA.TestCases.AdminLoginTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest -->
     </classes>
   </test> <!-- HR-ONBOARDING(failed) -->
 </suite> <!-- Failed suite [RedhuAutomationFrameWork] -->

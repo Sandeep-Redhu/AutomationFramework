@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import com.redhu.Base.TestBase;
 
-public class AdminLoginPage extends TestBase {
+public class LoginScreen extends TestBase {
 
 	// creation of object repositry
 
@@ -24,11 +24,17 @@ public class AdminLoginPage extends TestBase {
 	@FindBy(xpath = "//button[text()='Login']")
 	WebElement adminLoginButton;
 
+	@FindBy(xpath = "//a[text()='Forgot Password?']")
+	WebElement forgotPasswordLink;
+
+	@FindBy(xpath = "//label[@for='rememberMe']")
+	WebElement rememberMeLink;
+
 	@FindBy(xpath = "//button[text()='Dashboard']")
 	WebElement adminDasbboardButton;
 
 	// initialiation of the page object
-	public AdminLoginPage() throws IOException {
+	public LoginScreen() throws IOException {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -40,6 +46,17 @@ public class AdminLoginPage extends TestBase {
 		adminLoginButton.click();
 		String text = adminDasbboardButton.getText();
 		Assert.assertEquals(text, "Dashboard", "User is not able to login successfully");
+	}
+
+	public void forgotPasswordIsDisplay() {
+		String forgetText = forgotPasswordLink.getText();
+		Assert.assertEquals(forgetText, "Forgot Password?", "Forgot link not found on Login page");
+
+	}
+
+	public void rememberMeIsDisplay() {
+		String remText = rememberMeLink.getAttribute("for");
+		Assert.assertEquals(remText, "rememberMe", "Remeber me link is not found on login page");
 
 	}
 
