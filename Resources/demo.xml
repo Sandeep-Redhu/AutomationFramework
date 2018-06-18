@@ -15,7 +15,7 @@
 		<classes>
 
 
-			<class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest"></class>
+			<class name="com.HrOnBoarding.QA.TestCases.AddClientByAdminTest"></class>
 
 
 		</classes>

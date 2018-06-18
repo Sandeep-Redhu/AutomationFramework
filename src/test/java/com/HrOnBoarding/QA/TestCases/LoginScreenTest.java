@@ -22,33 +22,28 @@ public class LoginScreenTest extends TestBase {
 		adminLogin = new LoginScreen();
 
 	}
-     @Test(enabled = true)
+
+	@Test(enabled = true)
 	public void verifyAdminLogin() {
 		adminLogin.adminLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
+	}
+
+	@Test
+	public void verifyForgotPasswordLinkIsAvailable() {
+		adminLogin.forgotPasswordIsDisplay();
 
 	}
-     
-     
-     @Test
-     public void verifyForgotPasswordLinkIsAvailable(){
-    	 adminLogin.forgotPasswordIsDisplay();
-    	 
-     }
-     
-     @Test
-     public void verifyRememberMeLinkIsAvailable(){
-    	 
-    	 adminLogin.rememberMeIsDisplay();
-     }
-     
-     
-     
-     @AfterMethod
-     public void tearDown(){
-    	 driver.quit();
-    	 
-     }
-	
-	
+
+	@Test
+	public void verifyRememberMeLinkIsAvailable() {
+
+		adminLogin.rememberMeIsDisplay();
+	}
+
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+
+	}
 
 }

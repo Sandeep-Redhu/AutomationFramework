@@ -1,75 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RedhuAutomationFrameWork" duration-ms="75039" started-at="2018-06-14T14:36:52Z" finished-at="2018-06-14T14:38:07Z">
+  <suite name="RedhuAutomationFrameWork" duration-ms="55839" started-at="2018-06-18T14:53:12Z" finished-at="2018-06-18T14:54:08Z">
     <groups>
     </groups>
-    <test name="HR-ONBOARDING" duration-ms="75039" started-at="2018-06-14T14:36:52Z" finished-at="2018-06-14T14:38:07Z">
-      <class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="setUp" is-config="true" duration-ms="13527" started-at="2018-06-14T14:37:38Z" finished-at="2018-06-14T14:37:52Z">
+    <test name="HR-ONBOARDING" duration-ms="55839" started-at="2018-06-18T14:53:12Z" finished-at="2018-06-18T14:54:08Z">
+      <class name="com.HrOnBoarding.QA.TestCases.AddClientByAdminTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AddClientByAdminTest@5c3bd550]" name="setUp" is-config="true" duration-ms="18266" started-at="2018-06-18T14:53:13Z" finished-at="2018-06-18T14:53:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyForgotPasswordEmailSent()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="verifyForgotPasswordEmailSent" duration-ms="1316" started-at="2018-06-14T14:37:52Z" finished-at="2018-06-14T14:37:53Z">
+        <test-method status="PASS" signature="addClientByAdminUser()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AddClientByAdminTest@5c3bd550]" name="addClientByAdminUser" duration-ms="37534" started-at="2018-06-18T14:53:31Z" finished-at="2018-06-18T14:54:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyForgotPasswordEmailSent -->
-        <test-method status="PASS" signature="terDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="terDown" is-config="true" duration-ms="631" started-at="2018-06-14T14:37:53Z" finished-at="2018-06-14T14:37:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="setUp" is-config="true" duration-ms="12698" started-at="2018-06-14T14:37:54Z" finished-at="2018-06-14T14:38:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyForgotPasswordScreenDefaultText()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="verifyForgotPasswordScreenDefaultText" duration-ms="292" started-at="2018-06-14T14:38:07Z" finished-at="2018-06-14T14:38:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordScreenDefaultText -->
-        <test-method status="PASS" signature="terDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest@604ed9f0]" name="terDown" is-config="true" duration-ms="618" started-at="2018-06-14T14:38:07Z" finished-at="2018-06-14T14:38:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- terDown -->
-      </class> <!-- com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest -->
-      <class name="com.HrOnBoarding.QA.TestCases.LoginScreenTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="setUp" is-config="true" duration-ms="14477" started-at="2018-06-14T14:36:52Z" finished-at="2018-06-14T14:37:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAdminLogin()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="verifyAdminLogin" duration-ms="1520" started-at="2018-06-14T14:37:07Z" finished-at="2018-06-14T14:37:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="tearDown" is-config="true" duration-ms="594" started-at="2018-06-14T14:37:08Z" finished-at="2018-06-14T14:37:09Z">
+        </test-method> <!-- addClientByAdminUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.AddClientByAdminTest@5c3bd550]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-06-18T14:54:08Z" finished-at="2018-06-18T14:54:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="setUp" is-config="true" duration-ms="14011" started-at="2018-06-14T14:37:09Z" finished-at="2018-06-14T14:37:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyForgotPasswordLinkIsAvailable()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="verifyForgotPasswordLinkIsAvailable" duration-ms="56" started-at="2018-06-14T14:37:23Z" finished-at="2018-06-14T14:37:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgotPasswordLinkIsAvailable -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="tearDown" is-config="true" duration-ms="610" started-at="2018-06-14T14:37:23Z" finished-at="2018-06-14T14:37:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="setUp" is-config="true" duration-ms="13961" started-at="2018-06-14T14:37:24Z" finished-at="2018-06-14T14:37:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyRememberMeLinkIsAvailable()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="verifyRememberMeLinkIsAvailable" duration-ms="53" started-at="2018-06-14T14:37:38Z" finished-at="2018-06-14T14:37:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRememberMeLinkIsAvailable -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.HrOnBoarding.QA.TestCases.LoginScreenTest@91161c7]" name="tearDown" is-config="true" duration-ms="609" started-at="2018-06-14T14:37:38Z" finished-at="2018-06-14T14:37:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.HrOnBoarding.QA.TestCases.LoginScreenTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.AddClientByAdminTest -->
     </test> <!-- HR-ONBOARDING -->
   </suite> <!-- RedhuAutomationFrameWork -->
 </testng-results>

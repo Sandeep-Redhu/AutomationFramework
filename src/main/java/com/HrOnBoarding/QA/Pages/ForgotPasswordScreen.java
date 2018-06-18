@@ -25,6 +25,10 @@ public class ForgotPasswordScreen extends TestBase {
 
 	@FindBy(xpath = "//p[@class='forgot-password']")
 	WebElement forgotPasswordDefaultText;
+	
+	
+	@FindBy(linkText="Sign in.")
+	WebElement returnSingIn;
 
 	public ForgotPasswordScreen() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -46,9 +50,14 @@ public class ForgotPasswordScreen extends TestBase {
 		Assert.assertEquals(forgetText,
 				"Forget your password? No worries! Just enter your email address and we’ll send you a password reset link.",
 				"Forgot password screen default text is not correct.");
-		
-		
-
 	}
+	
+	public void returnSignInScreen(){
+		forgotPasswordLink.click();
+		returnSingIn.click();
+		String text = forgotPasswordLink.getText();
+		Assert.assertEquals(text, "Forgot Password?" , "User is not redirected on Login Screen");
+	}
+	
 
 }
