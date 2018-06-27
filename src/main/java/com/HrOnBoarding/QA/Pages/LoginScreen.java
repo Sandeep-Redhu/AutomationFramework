@@ -40,7 +40,7 @@ public class LoginScreen extends TestBase {
 
 	// Writing actions of this page
 
-	public void adminLogin(String us, String psd) {
+	public void DoLogin(String us, String psd) {
 		adminEmailAdressTextField.sendKeys(us);
 		adminPasswordTextField.sendKeys(psd);
 		adminLoginButton.click();

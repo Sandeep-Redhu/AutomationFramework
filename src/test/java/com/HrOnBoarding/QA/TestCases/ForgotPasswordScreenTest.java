@@ -24,12 +24,12 @@ public class ForgotPasswordScreenTest extends TestBase {
 	forgetPasswordScreenObj = 	new ForgotPasswordScreen();
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyForgotPasswordEmailSent(){
 		forgetPasswordScreenObj.forgotPasswordEmailSent(prop.getProperty("userEmailAdress"));
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verifyForgotPasswordScreenDefaultText(){
 		forgetPasswordScreenObj.forgetPasswordDefaultText();
 	}

@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.redhu.Base.TestBase;
 
@@ -31,21 +32,23 @@ public class AddClientByAdmin extends TestBase {
 
 	@FindBy(xpath = "//input[@placeholder='URL']")
 	WebElement urlTextField;
-	
-	@FindBy(xpath="//input[@name='file']")
+
+	@FindBy(xpath = "//input[@name='file']")
 	WebElement uploadLogo;
-	
+
 	@FindBy(xpath = "//button[text()='Add']")
 	WebElement addClientDone;
+	
+	@FindBy(xpath="//div[@role='alert']")
+	WebElement emailIdExistAlert;
+	
 
 	public AddClientByAdmin() throws IOException {
-
 		PageFactory.initElements(driver, this);
-
 	}
 
-	public void addClient(String companyName, String clientName, String emailId, String phoneNum, String url,String logo)
-			throws InterruptedException {
+	public void addClient(String companyName, String clientName, String emailId, String phoneNum, 
+			String logo) throws InterruptedException {
 
 		clientManagementButton.click();
 		Thread.sleep(3000);
@@ -56,18 +59,17 @@ public class AddClientByAdmin extends TestBase {
 		clientNameTextField.sendKeys(clientName);
 		emailTextField.sendKeys(emailId);
 		phoneNumberTextField.sendKeys(phoneNum);
-		urlTextField.sendKeys(url);
 		uploadLogo.sendKeys(logo);
 		Thread.sleep(2000);
 		addClientDone.click();
 		
-		
-		
-		
-		
-		
-		
-		
+		/*
+		Thread.sleep(10000);
+		if(emailIdExistAlert.isDisplayed()){
+		Assert.assertTrue(emailIdExistAlert.isDisplayed(), "Email ID of client Already Exist in the system");
+		} else {
+			Assert.assertTrue(clientManagementButton.isDisplayed(), "Client has been added successfully");
+		}  */
 		
 	}
 

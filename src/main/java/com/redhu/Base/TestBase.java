@@ -25,15 +25,8 @@ public class TestBase {
 	public TestBase() throws IOException {
 		prop = new Properties();
 		
-		// below line are commented because these we were using for Take A class project. if you want to run 
-		// take a class then uncommnet these.
-	//	FileInputStream ip = new FileInputStream(
-		//		"D:\\Home\\November\\SandeepTest\\src\\main\\java\\com\\TakeAClass\\qa\\config\\Config.properties");
-		
-		
 		FileInputStream ip = new FileInputStream(
 				"D:\\7MBAutomation\\SandeepTest\\src\\main\\java\\com\\redhu\\qa\\config\\Config1.properties");
-				
 				
 		prop.load(ip);
 	}

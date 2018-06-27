@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TakeAClass.TestCases.LoginPageTest">
+      <class name="com.HrOnBoarding.QA.TestCases.Dummy">
         <methods>
-          <include name="tearDown"/>
-          <include name="userLoginTest"/>
-          <include name="setUp"/>
+          <include name="read"/>
         </methods>
-      </class> <!-- com.TakeAClass.TestCases.LoginPageTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.Dummy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

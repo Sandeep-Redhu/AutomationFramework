@@ -16,7 +16,7 @@ public class TestUtil extends TestBase {
 		// TODO Auto-generated constructor stub   // No need from working point of view, Just we have added this constructer. 
 	}
 
-	public static long PAGE_LOAD_TIMEOUT = 30;
+	public static long PAGE_LOAD_TIMEOUT = 50;
 	public static long IMPLICTWAITTIMEOUT = 20;
 	
 	

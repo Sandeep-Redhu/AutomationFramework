@@ -28,16 +28,16 @@ public class AddClientByAdminTest extends TestBase {
 	@Test
 	public void addClientByAdminUser() throws InterruptedException {
 		
-		loginAdminObj.adminLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
+		loginAdminObj.DoLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 		Thread.sleep(2000);
 		addClientByAdminObj.addClient(prop.getProperty("CompanyName"), prop.getProperty("ClientName"),
-				prop.getProperty("EmailID"), prop.getProperty("PhoneNumber"), prop.getProperty("URL"), prop.getProperty("logo"));
+				prop.getProperty("EmailID"), prop.getProperty("PhoneNumber"), prop.getProperty("logo"));
 
 	}
 
 	@AfterMethod
 	public void tearDown() {
-		// driver.quit();
+		 driver.quit();
 
 	}
 

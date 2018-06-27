@@ -2,7 +2,9 @@ package com.HrOnBoarding.QA.TestCases;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,7 +12,7 @@ import com.HrOnBoarding.QA.Pages.LoginScreen;
 import com.redhu.Base.TestBase;
 
 public class LoginScreenTest extends TestBase {
-	LoginScreen adminLogin;
+	LoginScreen Login;
 
 	public LoginScreenTest() throws IOException {
 		super();
@@ -19,25 +21,30 @@ public class LoginScreenTest extends TestBase {
 	@BeforeMethod
 	public void setUp() throws IOException {
 		initialization();
-		adminLogin = new LoginScreen();
+		Login = new LoginScreen();
 
 	}
 
 	@Test(enabled = true)
-	public void verifyAdminLogin() {
-		adminLogin.adminLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
+	public void DoAdminLogin() {
+		Login.DoLogin(prop.getProperty("userEmailAdress"), prop.getProperty("userPasswordDetails"));
 	}
 
-	@Test
+	@Test(enabled = true)
+	public void DoClientLogin() {
+		Login.DoLogin(prop.getProperty("ClientEmailAddress"), prop.getProperty("ClientPassword"));
+
+	}
+
+	@Test(enabled = true)
 	public void verifyForgotPasswordLinkIsAvailable() {
-		adminLogin.forgotPasswordIsDisplay();
-
+		Login.forgotPasswordIsDisplay();
 	}
 
-	@Test
+	@Test(enabled = true)
 	public void verifyRememberMeLinkIsAvailable() {
 
-		adminLogin.rememberMeIsDisplay();
+		Login.rememberMeIsDisplay();
 	}
 
 	@AfterMethod

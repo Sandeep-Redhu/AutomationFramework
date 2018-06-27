@@ -14,11 +14,12 @@
 	<test name="HR-ONBOARDING">
 		<classes>
 
-
 			<class name="com.HrOnBoarding.QA.TestCases.LoginScreenTest"></class>
 			<class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest"></class>
-
-
+			<class name="com.HrOnBoarding.QA.TestCases.AddClientByAdminTest"></class>
+			<class name="com.HrOnBoarding.QA.TestCases.ClientManagementByAdminTest"></class>
+			
+			
 		</classes>
 	</test>
 </suite>
