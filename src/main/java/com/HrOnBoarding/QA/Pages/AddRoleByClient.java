@@ -26,6 +26,9 @@ public class AddRoleByClient extends TestBase {
 	@FindBy(xpath = "//input[@value='hr']")
 	WebElement hrRadioButton;
 
+	@FindBy(xpath = "//input[@value='payRoll']")
+	WebElement payRollRadioButton;
+
 	@FindBy(xpath = "//input[@placeholder='First Name']")
 	WebElement firstNameRole;
 
@@ -71,4 +74,20 @@ public class AddRoleByClient extends TestBase {
 		addRole.click();
 
 	}
+
+	public void addPayRollByClient(String firstName, String lastName, String emailID, String empCode)
+			throws InterruptedException {
+		jumpToAddRoleByClientScreen();
+		Thread.sleep(2000);
+		addRoleButton.click();
+		Thread.sleep(2000);
+		payRollRadioButton.click();
+		firstNameRole.sendKeys(firstName);
+		LastNameRole.sendKeys(lastName);
+		emailIDRole.sendKeys(emailID);
+		empIDRole.sendKeys(empCode);
+		addRole.click();
+
+	}
+
 }

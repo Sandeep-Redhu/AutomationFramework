@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47" started-at="2018-06-27T12:15:06Z" finished-at="2018-06-27T12:15:06Z">
+  <suite name="Default suite" duration-ms="75543" started-at="2018-06-28T11:38:42Z" finished-at="2018-06-28T11:39:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47" started-at="2018-06-27T12:15:06Z" finished-at="2018-06-27T12:15:06Z">
-      <class name="com.HrOnBoarding.QA.TestCases.Dummy">
-        <test-method status="PASS" signature="csvReading()[pri:0, instance:com.HrOnBoarding.QA.TestCases.Dummy@14acaea5]" name="csvReading" duration-ms="14" started-at="2018-06-27T12:15:06Z" finished-at="2018-06-27T12:15:06Z">
+    <test name="Default test" duration-ms="75543" started-at="2018-06-28T11:38:42Z" finished-at="2018-06-28T11:39:58Z">
+      <class name="com.TakeAClass.TestCases.ValidLink2">
+        <test-method status="PASS" signature="brokenLink()[pri:0, instance:com.TakeAClass.TestCases.ValidLink2@29774679]" name="brokenLink" duration-ms="75508" started-at="2018-06-28T11:38:42Z" finished-at="2018-06-28T11:39:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- csvReading -->
-      </class> <!-- com.HrOnBoarding.QA.TestCases.Dummy -->
+        </test-method> <!-- brokenLink -->
+      </class> <!-- com.TakeAClass.TestCases.ValidLink2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

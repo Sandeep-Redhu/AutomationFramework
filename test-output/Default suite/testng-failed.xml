@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HrOnBoarding.QA.TestCases.Dummy">
+      <class name="com.TakeAClass.TestCases.ValidLink2">
         <methods>
-          <include name="read"/>
+          <include name="brokenLink"/>
         </methods>
-      </class> <!-- com.HrOnBoarding.QA.TestCases.Dummy -->
+      </class> <!-- com.TakeAClass.TestCases.ValidLink2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

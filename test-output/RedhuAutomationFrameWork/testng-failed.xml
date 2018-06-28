@@ -7,20 +7,13 @@
   </listeners>
   <test thread-count="5" name="HR-ONBOARDING(failed)">
     <classes>
-      <class name="com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest">
+      <class name="com.HrOnBoarding.QA.TestCases.AddRoleByClientTest">
         <methods>
-          <include name="verifyForgotPasswordEmailSent"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="addPayRollByClient"/>
         </methods>
-      </class> <!-- com.HrOnBoarding.QA.TestCases.ForgotPasswordScreenTest -->
-      <class name="com.HrOnBoarding.QA.TestCases.ClientManagementByAdminTest">
-        <methods>
-          <include name="searcClientByName"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.HrOnBoarding.QA.TestCases.ClientManagementByAdminTest -->
+      </class> <!-- com.HrOnBoarding.QA.TestCases.AddRoleByClientTest -->
     </classes>
   </test> <!-- HR-ONBOARDING(failed) -->
 </suite> <!-- Failed suite [RedhuAutomationFrameWork] -->

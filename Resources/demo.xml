@@ -15,7 +15,7 @@
 		<classes>
 
 
-			<class name="com.HrOnBoarding.QA.TestCases.AddClientByAdminTest"></class>
+			<class name="com.HrOnBoarding.QA.TestCases.AddRoleByClientTest"></class>
 
 
 		</classes>
